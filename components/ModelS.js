@@ -7,7 +7,6 @@ export default function ModelS() {
       <Text style={styles.paragraph}>
         Information about Model S, extending this to see if it makes the box wider.
       </Text>
-      <Image style={styles.logo} source={require('../assets/snack-icon.png')} />
     </View>
   );
 }
