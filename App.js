@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Text,
-  View,
-  StyleSheet,
-  Image,
-  Picker,
-} from 'react-native';
+import { Text, View, StyleSheet, Image, Picker } from 'react-native';
 
 import { Card } from 'react-native-paper';
 
@@ -127,10 +121,9 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: 'white',
+    backgroundColor: '#f6f6f6',
   },
   cardHeaderContainer: {
-    flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
@@ -151,9 +144,9 @@ const styles = StyleSheet.create({
     width: 250,
   },
   cardStyling: {
-    height: 425,
+    height: 575,
     width: 500,
-    marginBottom: 15,
+    marginBottom: 5,
     borderRadius: 10,
     borderColor: 'black',
     borderWidth: 1,

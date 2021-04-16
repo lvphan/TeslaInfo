@@ -4,22 +4,59 @@ import { Text, View, StyleSheet, Image } from 'react-native';
 export default function ModelS() {
   return (
     <View style={styles.container}>
-      <View style={styles.paragraphContainer}>
-        <Text style={styles.paragraph}>
-          <b>Range:</b>{"\n"}412mi (est)
+      <View>
+        <Text style={styles.paragraphHeader}>
+          <b>Specs:</b>
         </Text>
-        <Text style={styles.paragraph}>
-          <b>Top Speed:</b>{"\n"}155mph
-        </Text>
-        <Text style={styles.paragraph}>
-          <b>0-60:</b>{"\n"}3.1 sec
-        </Text>
-        
-        <Text style={styles.paragraph}>
-        <b>Drive:</b>{"\n"}All Wheel Drive</Text>
-        
       </View>
 
+      <View style={styles.paragraphContainer}>
+        <Text style={styles.paragraph}>
+          <b>Range:</b>
+          {'\n'}412mi (est)
+        </Text>
+        <Text style={styles.paragraph}>
+          <b>Top Speed:</b>
+          {'\n'}155mph
+        </Text>
+        <Text style={styles.paragraph}>
+          <b>0-60:</b>
+          {'\n'}3.1 sec
+        </Text>
+        <Text style={styles.paragraph}>
+          <b>Drive:</b>
+          {'\n'}All Wheel Drive
+        </Text>
+      </View>
+
+      <View>
+        <Text style={styles.paragraphHeader}>
+          <b>Additional Information:</b>
+        </Text>
+      </View>
+
+      <View style={styles.paragraphContainer}>
+        <Text style={styles.paragraph}>
+          <b>Peak Power:</b>
+          {'\n'}670 hp
+        </Text>
+        <Text style={styles.paragraph}>
+          <b>Cargo Capacity:</b>
+          {'\n'}28 cu ft
+        </Text>
+        <Text style={styles.paragraph}>
+          <b>Weight:</b>
+          {'\n'}4,561 lbs / 2003.064 kgs
+        </Text>
+        <Text style={styles.paragraph}>
+          <b>Drag Coefficient:</b>
+          {'\n'}0.208 Cd
+        </Text>
+        <Text style={styles.paragraph}>
+          <b>Powertrain:</b>
+          {'\n'}Dual-Motor
+        </Text>
+      </View>
       <Text>
         With the longest range and quickest acceleration of any electric vehicle
         in production, Model S Plaid is the highest performing sedan ever built.
@@ -32,8 +69,6 @@ export default function ModelS() {
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
-    justifyContent: 'center',
     padding: 24,
   },
   paragraph: {
@@ -41,7 +76,12 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   paragraphContainer: {
+    justifyContent: 'center',
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexWrap: 'wrap',
+  },
+  paragraphHeader: {
+    fontSize: 20,
+    alignSelf: 'center',
   },
 });
